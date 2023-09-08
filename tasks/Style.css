@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#note-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#note {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #92898933;
+}
+
+#note:focus {
+    outline: none;
+    box-shadow: 0 0 10px #74606580;
+}
+
+#add-note-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-note-btn:hover {
+    background-color: #8f782d;
+}
+
+#notes {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+#notes::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bd4242;
+    z-index: -1;
+}
+
+#notes .note {
+    padding: 10px;
+    border-bottom: 1px solid #5b59b3;
+}
+
+#notes .note:last-child {
+    border-bottom: none;
+}
